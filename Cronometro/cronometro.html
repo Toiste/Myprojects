@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1 id="intro">BEM VINDO AO CRONOMETRO!</h1>
+    </header>
+    <section>
+        <div>
+            <h1>Cronômetro</h1>
+            <h1>Conte já o tempo decorrido</h1>
+        </div>
+        <p id="minutos">0</p>
+        <p>:</p>
+        <p id="segundos">00</p>
+        <div>
+            <input type="button" value="Começar" id="comecar" onclick="comecar()">
+            <input type="button" value="Parar" id="parar" onclick="parar()">
+            <input type="button" value="Resetar" id="resetar" onclick="resetar()">
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
