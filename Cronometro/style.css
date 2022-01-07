@@ -7,7 +7,7 @@ header {
     text-align: center;
 }
 h1#intro {
-    color: black;
+    color: #A8653B;
 }
 h1 {
     color: white;
@@ -18,13 +18,14 @@ p {
     display: inline;
 }
 section {
-    background-color: black;
+    background-color: #A8653B;
     width: 300px;
     height: 270px;
     text-align: center;
     margin: auto;
     padding-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 2px 10px black;
 }
 
 input {
