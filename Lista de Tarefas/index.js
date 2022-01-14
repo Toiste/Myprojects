@@ -12,8 +12,7 @@ function adicionar() {
     lista.appendChild(button)
     position.appendChild(lista);
     
-    lista.classList.add("arroz")
-    console.log(lista.className)
+    lista.classList.add("li")
 
     /*REMOVER*/
     button.onclick = function () {
