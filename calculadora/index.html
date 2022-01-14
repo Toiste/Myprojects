@@ -18,29 +18,29 @@
             </div>
                 <table>
                     <tr>
-                        <td><button class="operadores" onclick="adicionar('+')">+</button></td>
-                        <td><button class="operadores" onclick="adicionar('-')">-</button></td>
-                        <td><button class="operadores" onclick="adicionar('*')">x</button></td>
-                        <td><button class="operadores" onclick="adicionar('/')">÷</button></td>
+                        <td><button class="operadores" onclick="addoperador('+')">+</button></td>
+                        <td><button class="operadores" onclick="addoperador('-')">-</button></td>
+                        <td><button class="operadores" onclick="addmultiplicador('*')">x</button></td>
+                        <td><button class="operadores" onclick="addoperador('/')">÷</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao" onclick="adicionar('7')">7</button></td>
-                        <td><button class="botao" onclick="adicionar('8')">8</button></td>
-                        <td><button class="botao" onclick="adicionar('9')">9</button></td>
+                        <td><button class="botao" onclick="addnumber('7')">7</button></td>
+                        <td><button class="botao" onclick="addnumber('8')">8</button></td>
+                        <td><button class="botao" onclick="addnumber('9')">9</button></td>
                         <td rowspan="4"><button id="igual" onclick="calcular()">=</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao" onclick="adicionar('4')">4</button></td>
-                        <td><button class="botao" onclick="adicionar('5')">5</button></td>
-                        <td><button class="botao" onclick="adicionar('6')">6</button></td>
+                        <td><button class="botao" onclick="addnumber('4')">4</button></td>
+                        <td><button class="botao" onclick="addnumber('5')">5</button></td>
+                        <td><button class="botao" onclick="addnumber('6')">6</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao" onclick="adicionar('1')">1</button></td>
-                        <td><button class="botao" onclick="adicionar('2')">2</button></td>
-                        <td><button class="botao" onclick="adicionar('3')" >3</button></td>
+                        <td><button class="botao" onclick="addnumber('1')">1</button></td>
+                        <td><button class="botao" onclick="addnumber('2')">2</button></td>
+                        <td><button class="botao" onclick="addnumber('3')" >3</button></td>
                     <tr>
-                        <td><button class="botao" onclick="adicionar('0')">0</button></td>
-                        <td><button class="botao" onclick="adicionar('.')">.</button></td>
+                        <td><button class="botao" onclick="addnumber('0')">0</button></td>
+                        <td><button class="botao" onclick="addoperador('.')">.</button></td>
                         <td><button class="botao" onclick="limpar('')">C</button></td>
                     </tr>
                 </table>
