@@ -97,7 +97,8 @@ a {
 }
 
 .corpo-principal {
-    height: 100vh;
+    min-height: 60vh;
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -111,9 +112,8 @@ a {
 }
 
 .corpo-jogos img {
-    border: 0.5rem solid var(--logo-color);
-    border-radius: 1rem;
-    height: 40rem;
+    box-shadow: 0px 0px 5px 5px var(--logo-color);
+    height: 35rem;
 }
 
 .corpo-jogos img:hover {
@@ -121,24 +121,56 @@ a {
     opacity: 0.5;
 }
 
+.corpo-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpo-informacoes-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
+    margin-top: 20vh;
+}
+
+.corpo-informacoes-topo h1, .corpo-informacoes-topo p{
+    color: var(--secundary-color);
+}
+
+.corpo-informacoes-topo p {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.corpo-informacoes-conteudo {
+    background-color: var(--terciary-claro);
+    min-height: 80vh;
+    width: 80%;
+    margin-bottom: 10vh;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 10px var(--logo-color);
+}
+
 .corpo-download {
-    background: linear-gradient(to left, #06b3b3, var(--logo-color));
     height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px var(--logo-color);
 }
 
 .corpo-download h1 {
     font-weight: 900;
-    color: var(--secundary-color);
+    color: var(--logo-color);
 }
 
 .corpo-download div {
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
-    background: var(--secundary-color);
+    background: var(--terciary-color);
     width: 30rem;
     height: 5rem;
     display: flex;
@@ -149,12 +181,16 @@ a {
     font-weight: bolder;
 }
 
-.corpo-download div:hover {
-    cursor: pointer;
-    border: 0.5px solid rgba(0, 0, 0, 0.473);
+.corpo-download div p {
+    color: var(--secundary-color);
 }
 
-.borda_texto{
+.corpo-download div:hover {
+    cursor: pointer;
+    border: 0.5px solid var(--logo-color);
+}
+
+.borda-texto{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.719);
 }
