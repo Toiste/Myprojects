@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: black
+}
+
+th {
+    font-size: 18px;
+}
+
+button {
+    margin: 20px 10px;
+    background: rgb(19, 0, 126);  
+    border: none;
+    height: 30px;
+    color: white;
+    border: 2px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(32, 0, 211);
+}
+
+.corpo {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.corpo h1 {
+    text-align: center;
+    padding: 20px 0px 50px;
+}
+
+.corpo table {
+    display: flex;
+    justify-content: center;
+}
+
+.corpo table {
+    border-collapse:separate;
+    border-spacing:70px 5px;
+}
+
+
+
+.calculo input {
+    width: 99%;
+    height: 20px; 
+}
+
+.calculo {
+    display: flex;
+    flex-direction: column;
+}
+
