@@ -5,10 +5,9 @@
     --secundary-color: #fff;
     --terciary-color-dark: #8E8E8E;
     --terciary-color: #A6A6A6;
+    --terciary-color-light: #dfdfdf;
     --font-primary: 'Poppins', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -23,7 +22,7 @@ html {
 
 body {
     background: var(--secundary-color);
-    font-family: var(--font-primary);
+    font-family: var(--font-primary)
 }
 
 a {
@@ -55,48 +54,122 @@ h4 {
     background: var(--primary-color);
 }
 
-.main-menu {
+.menu-principal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+}
+
+.information-bar {
+    background: var(--primary-color);
+    color: white;
+
+    padding: 1.5rem 0rem 0rem 5.8rem;
+    margin-bottom: 2rem;
+}
+
+.information-bar ul{
     display: flex;
-    height: 10vh;
+}
+
+.information-bar ul li {
+    color: var(--terciary-color-light);
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    list-style: none;
+    padding: 0 1rem 0 1rem;
+}
+
+.main-menu {
+    position: relative;
+
+    height: 7rem;
+
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-menu img {
-    height: 7rem;
-    width: 7rem;
+    height: 6.5rem;
+    width: 6.5rem;
+
     position: absolute;
+
     border-radius: 50%;
-    top: 1rem;
+
+    top: 0.3rem;
     left: 50%;
+
     transform: translate(-50%, 0%);
 }
 
-.options-menu {
+.main-menu a {
+    color: var(--secundary-color);
+}
+
+.options-menu { 
     display: flex;
     list-style: none;
     justify-content: space-around;
+
     padding: 0 2rem 0 2rem;
 }
 
 .options-menu li a {
-    color: var(--secundary-color);
+    font-weight: 700;
     font-size: 1.5rem;
     padding: 0 1rem 0 1rem;
 }
 
+.menu-white {
+    background: white;
+
+    box-shadow: 0.1rem 0rem 6rem -2.8rem;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-white img {
+    height: 6.5rem;
+    width: 6.5rem;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    top: 0.3rem;
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+}
+
+.menu-white a {
+    color: black;
+}
+
 .home {
-    background: var(--primary-color);
+    background-image: url("../IMG/banner-site-marco-22.jpg");
     background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
     background-size: cover;
     background-position: center center;
 }
 
 .main-home {
+    padding-top: 2rem;
     color: var(--secundary-color);
     height: 100vh;
     text-align: center;
@@ -107,7 +180,7 @@ h4 {
 }
 
 .main-home h1, h4, p {
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .main-home h1 {
@@ -121,30 +194,29 @@ h4 {
 
 .main-home h4 {
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 1rem;
 }
 
 .main-home p {
-    padding-top: 2rem;
-    font-weight: 200;
     width: 40%;
     font-size: 2.7rem;
 }
 
 .button-home {
-    margin-top: 4rem;
-    height: 5rem;
+
+    height: 6rem;
     width: 25rem;
+
     border: 0.2rem solid var(--secundary-color);
+
+    color: var(--secundary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.button-home a {
-    color: var(--secundary-color);
-    font-size: 1.5rem;
 }
 
 .products {
@@ -154,7 +226,7 @@ h4 {
 
 .products h2 {
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .products p {
@@ -162,15 +234,16 @@ h4 {
     letter-spacing: 0.2rem;
     margin-top: 4rem;
     margin-bottom: 5rem;
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .grid-product {
-    padding: 0 10rem 0 10rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    padding: 0 10rem 0 10rem;
 }
 
 .main-product {
