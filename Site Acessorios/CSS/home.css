@@ -1,0 +1,57 @@
+.home {
+    background-image: url("../IMG/banner-site-marco-22.jpg");
+    background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-home {
+    padding-top: 2rem;
+    color: var(--secundary-color);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home h1, h4, p {
+    padding-bottom: 4rem;
+}
+
+.main-home h1 {
+    font-weight: 900;
+    font-size: 7rem;
+
+    width: 40%;
+
+    line-height: 7rem;
+}
+
+.main-home h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+.main-home p {
+    width: 40%;
+    font-size: 2.7rem;
+}
+
+.button-home {
+
+    height: 6rem;
+    width: 25rem;
+
+    border: 0.2rem solid var(--secundary-color);
+
+    color: var(--secundary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
