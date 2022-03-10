@@ -51,7 +51,7 @@
     transform: translate(-50%, 0%);
 }
 
-.main-menu a {
+.main-menu a, .main-menu i {
     color: var(--secundary-color);
 }
 
@@ -61,6 +61,14 @@
     justify-content: space-around;
 
     padding: 0 2rem 0 2rem;
+}
+
+.margin-menu-right {
+    margin: 0 4rem 0 0rem;
+}
+
+.margin-menu-left {
+    margin: 0 0 0 4rem;
 }
 
 .options-menu li a {
