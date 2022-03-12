@@ -29,3 +29,7 @@
     font-weight: 600;
     margin-bottom: -1.2rem;
 }
+
+.principal-footer ul li a {
+    color: var(--secundary-color);
+}

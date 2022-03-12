@@ -1,4 +1,28 @@
 .information-end {
+    color: var(--terciary-color-dark);
     height: 20rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.information-end a {
+    color: var(--primary-color);
+}
+
+.one-info {
+    margin-bottom: 5rem;
+}
+
+.two-info a i{
+    color: var(--primary-color);
+    margin: 0 3rem;
+    font-size: 2.2rem;
+}
+
+.two-info a i:hover {
+    color: var(--terciary-color);
 }
