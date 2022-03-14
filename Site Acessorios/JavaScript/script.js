@@ -5,7 +5,7 @@ menu.classList.add("main-menu")
 
  window.addEventListener("scroll", () => {
     console.log(window.scrollY)
-   if (window.scrollY >= 50) {
+   if (window.scrollY >= 80) {
       informationBar.style.display = "none";
       menu.classList.remove("main-menu")
       menu.classList.add("menu-white")

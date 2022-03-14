@@ -1,16 +1,16 @@
 .menu-principal {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+
+    z-index: 3;
 }
 
 .information-bar {
     background: var(--primary-color);
     color: white;
 
-    padding: 1.5rem 0rem 0rem 5.8rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem 0rem 2rem 5.8rem;
 }
 
 .information-bar ul{
@@ -20,7 +20,7 @@
 .information-bar ul li {
     color: var(--terciary-color-light);
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
 
     list-style: none;
@@ -29,12 +29,15 @@
 
 .main-menu {
     position: relative;
+    background: var(--primary-color);
 
     height: 7rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    transition: 1s ease-out;
 }
 
 .main-menu img {
@@ -95,6 +98,8 @@
     align-items: center;
 
     transition: 1s ease;
+
+    z-index: 3;
 }
 
 .menu-white img {
