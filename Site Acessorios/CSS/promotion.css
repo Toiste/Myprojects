@@ -33,3 +33,14 @@
     cursor: pointer;
     opacity: 0.95;
 }
+
+@media (max-width: 1024px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 33.33%;
+     }
+
+     .colar-pena {
+         display: none;
+     }
+}

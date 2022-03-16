@@ -55,3 +55,23 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1024px) {
+    .main-home {
+        padding-top: 4rem;
+    }
+
+    .main-home h1 {
+        font-weight: 900;
+        font-size: 6rem;
+    
+        width: 80%;
+    
+        line-height: 7rem;
+    }
+
+    .main-home p {
+        width: 80%;
+        font-size: 2.7rem;
+    }
+}

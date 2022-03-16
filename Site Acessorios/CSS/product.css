@@ -1,19 +1,25 @@
 .products {
-    text-align: center;
     padding-top: 15vh;
 }
 
-.products h2 {
-    font-size: 5rem;
-    font-weight: 400;
+.title-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.products p {
+.title-products p {
     color: var(--terciary-color-dark);
     letter-spacing: 0.2rem;
     margin-top: 4rem;
     margin-bottom: 5rem;
     font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.title-products h2 {
+    font-size: 5rem;
     font-weight: 400;
 }
 
@@ -133,4 +139,32 @@
 
 .button-vermais:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .main-product img {
+        box-shadow: 0px 0px 5px 1px;
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .grid-product {
+        gap: 3rem;
+        
+    }
+    .main-product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 25rem;
+    }
+
+    .title-products p {
+        text-align: center;
+
+        font-size: 1.6rem;
+
+        width: 90%;
+    }
 }

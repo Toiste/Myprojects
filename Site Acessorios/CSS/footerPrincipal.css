@@ -1,6 +1,7 @@
 .principal-footer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     background: var(--primary-color);
     color: var(--secundary-color);

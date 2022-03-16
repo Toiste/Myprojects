@@ -119,3 +119,60 @@
 .menu-white a {
     color: black;
 }
+
+@media (max-width: 1024px) {
+    .information-bar {
+        display: none;
+    }
+
+    .main-menu {
+        background: white;
+
+    box-shadow: 0.1rem 0rem 6rem -2.8rem;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 5.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 1s ease;
+
+    z-index: 3;
+    }
+
+    .main-menu img {
+        height: 5rem;
+        width: 5rem;
+    
+        position: absolute;
+    
+        border-radius: 0%;
+    
+        top: 0.2rem;
+        left: 3.5rem;
+    }
+
+    .main-menu i {
+        font-size: 1.7rem;
+        color: var(--primary-color);
+    }
+
+    .mobile-options {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 5rem;
+        right: 4rem;
+    }
+
+    .options-menu {
+        display: none;
+    }
+}
