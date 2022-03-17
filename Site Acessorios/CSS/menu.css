@@ -120,6 +120,14 @@
     color: black;
 }
 
+.menu-white a, .menu-white i {
+    color: var(--primary-color);
+}
+
+.mobile-options {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .information-bar {
         display: none;
