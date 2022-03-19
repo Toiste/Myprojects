@@ -28,28 +28,39 @@
 }
 
 .main-menu {
-    position: relative;
-    background: var(--primary-color);
-
-    height: 7rem;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    width: 100%;
+    position: relative;
+
+    background: var(--primary-color);
 
     transition: 1s ease-out;
 }
 
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    height: 7rem;
+}
+
 .logo-menu {
     position: absolute;
+
     top: 0.3rem;
     left: 50%;
+
     transform: translate(-50%, 0%);
 }
 
 .main-menu img {
     height: 6.5rem;
     width: 6.5rem;
+
     border-radius: 50%;  
 }
 
@@ -63,10 +74,6 @@
     justify-content: space-around;
 
     padding: 0 2rem 0 2rem;
-}
-
-.margin-menu-right {
-    margin: 0 4rem 0 0rem;
 }
 
 .margin-menu-left {
@@ -106,7 +113,35 @@
 }
 
 .mobile-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.7rem;
+
+    width: 6rem;
+    margin-right: 4rem;
+}
+
+.toggle-menu {
+    width: 3.5rem;
+    height: 4rem;
+    z-index: 4;
+    margin: 1.5rem 3rem 0 0;
+
     display: none;
+}
+
+.first-bar, .second-bar {
+    background-color: var(--primary-color);
+    height: 0.3rem;
+    width: 3.5rem;
+    margin: 0.6rem 0;
+    transition: 0.3s ease;
+}
+
+.menu-transition {
+    transition: 1s ease;
 }
 
 
@@ -118,7 +153,7 @@
     .main-menu {
     background: var(--secundary-color);
 
-    box-shadow: 0.1rem 0rem 6rem -2.8rem;
+    box-shadow: 0.1rem 0rem 6rem -2.5rem;
 
     position: fixed;
 
@@ -128,11 +163,8 @@
 
     height: 5.5rem;
 
-    display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-
-    transition: 1s ease;
 
     z-index: 3;
     }
@@ -149,20 +181,68 @@
         border-radius: 0%;
     }
 
-    .main-menu i {
+    .main-menu i, .main-menu a {
         font-size: 1.7rem;
         color: var(--primary-color);
     }
 
-    .mobile-options {
+    .container-menu {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        top: 0;
+        right: 0;
+
+        background: var(--secundary-color);
+
         position: absolute;
-        display: flex;
-        justify-content: space-between;
-        width: 5rem;
-        right: 4rem;
+
+        height: 65rem;
+        width: 0%;
+
+        overflow: hidden;
     }
 
-    .options-menu {
-        display: none;
+    .options-menu { 
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    
+        padding: 0;
+    }
+
+    .options-menu li {
+        width: 14rem;
+        margin-bottom: 4rem;
+    }
+
+    .options-menu li a {
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 0 1rem 0 0rem;
+    }
+
+    .margin-menu-left {
+        margin: 0;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .main-menu.on .container-menu {
+
+        width: 40rem;
+
+        transition: 1s ease;
+    }
+
+    .main-menu.on .first-bar {
+        transform: rotate(45deg) translate(0.25rem, 0.5rem);
+    }
+    .main-menu.on .second-bar {
+        transform: rotate(-45deg) translate(0.35rem, -0.3rem);
     }
 }
