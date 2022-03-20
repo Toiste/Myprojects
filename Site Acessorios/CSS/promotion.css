@@ -53,3 +53,14 @@
 
      
 }
+
+@media (max-width: 450px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 100%;
+     }
+
+     .colar-cruz {
+         display: none;
+     }
+}

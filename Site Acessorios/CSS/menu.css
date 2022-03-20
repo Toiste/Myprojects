@@ -246,3 +246,9 @@
         transform: rotate(-45deg) translate(0.35rem, -0.3rem);
     }
 }
+
+@media (max-width: 450px) {
+    .main-menu.on .container-menu {
+        width: 20rem;
+    }
+}

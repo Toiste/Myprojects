@@ -43,3 +43,17 @@
         padding: 2rem;
     }
 }
+
+@media (max-width: 450px) {
+    .principal-footer ul li {
+        font-size: 1.2rem;
+    }
+
+    .principal-footer ul{
+        list-style: none;
+        margin: 0 7rem 0 7rem;
+        padding: 2rem;
+    
+        width: 80%;
+    }
+}

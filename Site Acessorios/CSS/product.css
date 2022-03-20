@@ -142,6 +142,14 @@
 
 .button-vermais:hover {
     cursor: pointer;
+
+    color: var(--secundary-color);
+
+    background: var(--primary-color);
+
+    border: 0.2rem solid var(--secundary-color);
+
+    transition: 0.1s ease;
 }
 
 @media (max-width: 1024px) {
@@ -188,5 +196,15 @@
 
     .pena-prateada {
         display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .title-products h2 {
+        font-size: 9vw;
+    }
+
+    .title-products p {
+        font-size: 3.5vw;
     }
 }
