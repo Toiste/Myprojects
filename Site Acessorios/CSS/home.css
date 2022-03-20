@@ -75,3 +75,35 @@
         font-size: 2.7rem;
     }
 }
+
+@media (max-width: 700px) {
+    .main-home {
+        padding-top: 0rem;
+    }
+
+    .main-home h1 {
+        font-weight: 900;
+        font-size: 4rem;
+    
+        width: 80%;
+    
+        line-height: 7rem;
+    }
+
+    .main-home p {
+        width: 80%;
+        font-size: 1.9rem;
+    }
+
+    .main-home h1, h4, p {
+        padding-bottom: 3rem;
+    }
+
+    .main-home h4 {
+        font-size: 1.7rem;
+    }
+
+    .button-home {
+        margin-top:3rem ;
+    }
+}

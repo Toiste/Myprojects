@@ -168,3 +168,22 @@
         width: 90%;
     }
 }
+
+@media (max-width: 700px) {
+    .title-products h2 {
+        font-size: 3.7rem;
+        font-weight: 400;
+    }
+
+    .title-products p {
+        text-align: center;
+
+        font-size: 1.4rem;
+
+        width: 90%;
+    }
+
+    .pena-prateada {
+        display: none;
+    }
+}

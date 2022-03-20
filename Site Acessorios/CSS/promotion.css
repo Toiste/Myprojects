@@ -44,3 +44,10 @@
          display: none;
      }
 }
+
+@media (max-width: 700px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 50%;
+     }
+}
