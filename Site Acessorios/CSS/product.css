@@ -16,6 +16,9 @@
     margin-bottom: 5rem;
     font-size: 1.8rem;
     font-weight: 400;
+
+    width: 90%;
+    text-align: center;
 }
 
 .title-products h2 {
