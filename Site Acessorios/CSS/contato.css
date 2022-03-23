@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.contato-home {
+    background-image: url("../IMG/soft.png");
+    background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
+    background-size: cover;
+    background-position: center center;
+    min-height: 50vh;
+}
+
+.menu-background {
+    background: none;
+}
+
+.contato-contact {
+    display: flex;
+
+    min-height: 50vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10rem;
+    margin-left: 10rem;
+    width: 50vw;
+}
+
+.contact-title h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+.contact-title p {
+    color: var(--terciary-color);
+
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.contact-title a i {
+    color: var(--primary-color);
+
+    font-size: 2rem;
+
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10rem;
+    width: 50vw;
+}
+
+.contato-form label {
+    font-size: 1.5rem;
+
+}
+
+form input[type="text"] {
+
+    width: 80%;
+    font-size: 4rem;
+}
+
+form input[type="submit"] {
+    margin-top: 1rem;
+    height: 5rem;
+    width: 20rem;
+}
