@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byaku/Contato</title>
+    <title>Byaku</title>
+
 
     <link rel="shortcut icon" href="../../IMG/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../../CSS/variaveis.css">
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/menu.css">
-    <link rel="stylesheet" href="../../CSS/contato.css">
+    <link rel="stylesheet" href="../../CSS/colares.css">
+    <link rel="stylesheet" href="../../CSS/product.css">
     <link rel="stylesheet" href="../../CSS/footerPrincipal.css">
     <link rel="stylesheet" href="../../CSS/informationEnd.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,25 +64,71 @@
         </div>
     </aside>
 
-    <section class="contato-home">
+    <section class="colares-home">
 
     </section>
-    <section class="contato-contact">
-        <div class="contact-container">
-            <div class="contact-title">
-                <h2>Entre em Contato</h2>
-                <p>Tem alguma dúvida, sugestão ou reclamação? Entre em contato conosco através do formulário desta página.</p>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <div class="colares-filter">
+        <p>Exibindo 1-1 de 5 resultados</p>
+        <a href="#">Filtrar</a>
+        <select name="filtro dos colares" id="select">
+            <option value="ordernacao padrao">ORDENAÇÃO PADRÃO</option>
+            <option value="ordernacao popularidade">ORDERNAR POR POPULARIDADE</option>
+            <option value="ordernacao media">ORDERNAR POR MEDIA DE CLASSIFICAÇÃO</option>
+            <option value="ordernacao recente">ORDERNAR POR MAIS RECENTE</option>
+        </select>
+    </div>
+
+    <section id="produtos" class="viewport products">
+        <div class="grid-product">
+            <div class="main-product">
+                <img src="../../IMG/colar-ancora.png" alt="combo imagem">
+                <a href="#" class="combo-product">COMBOS</a>
+                <a href="#" class="option-product">COMBO FÉ</a>
+                <div class="option-shop">
+                    <div class="buy-product"><a href="#">R$100,00</a></div>
+                    <div class="see-options"><a href="#">Ver opções</a></div>
+                </div>
             </div>
+            <div class="main-product">
+                <img src="../../IMG/colar-cruz.png" alt="combo imagem">
+                <a href="#" class="combo-product">COMBOS</a>
+                <a href="#" class="option-product">COMBO FIEL</a>
+                <div class="option-shop">
+                    <div class="buy-product"><a href="#">R$100,00</a></div>
+                    <div class="see-options"><a href="#">Ver opções</a></div>
+                </div>
+            </div>
+            <div class="main-product">
+                <img src="../../IMG/colar-pena-prateada.png" alt="combo imagem">
+                <a href="#" class="combo-product">COMBOS</a>
+                <a href="#" class="option-product">COMBO CORAGEM</a>
+                <div class="option-shop">
+                    <div class="buy-product"><a href="#">R$100,00</a></div>
+                    <div class="see-options"><a href="#">Ver opções</a></div>
+                </div>
+            </div>
+            <div class="main-product">
+                <img src="../../IMG/colar-pena.png" alt="combo imagem">
+                <a href="#" class="combo-product">COMBOS</a>
+                <a href="#" class="option-product">COMBO PAZ</a>
+                <div class="option-shop">
+                    <div class="buy-product"><a href="#">R$100,00</a></div>
+                    <div class="see-options"><a href="#">Ver opções</a></div>
+                </div>
+            </div>
+            <div class="main-product">
+                <img src="../../IMG/colar-sereia.png" alt="combo imagem">
+                <a href="#" class="combo-product">COMBOS</a>
+                <a href="#" class="option-product">COMBO FORÇA</a>
+                <div class="option-shop">
+                    <div class="buy-product"><a href="#">R$100,00</a></div>
+                    <div class="see-options"><a href="#">Ver opções</a></div>
+                </div>
+            </div>
+            
         </div>
-        <form action="" class="contato-form">
-            <label for="name">Nome</label><input type="text" name="name" id="name">
-            <label for="email">E-mail</label><input type="text" name="email" id="email">
-            <label for="message">Sua Mensagem</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar mensagem">
-        </form>
     </section>
+
     <footer class="principal-footer">
         <ul>
             <li><h4>Atendimento ao cliente</h4></li>
@@ -116,6 +165,7 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </section>
+
     <script src="../../JavaScript/script.js"></script>
 </body>
 </html>
