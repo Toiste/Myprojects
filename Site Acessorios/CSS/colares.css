@@ -49,6 +49,10 @@
     min-height: 100vh;
 }
 
+.grid-product {
+    margin-bottom: 5rem;
+}
+
 @media (max-width: 750px) {
     .colares-filter select {
         width: 60%;
