@@ -3,6 +3,9 @@ const menu = document.querySelector("#menu");
 const informationBar = document.querySelector(".information-bar")
 const toggleMenu = document.querySelector(".toggle-menu")
 const containerMenu = document.querySelector(".container-menu")
+const toggleStore_1 = document.querySelector(".toggleStore_1")
+const toggleStore_2 = document.querySelector(".toggleStore_2")
+const storeMenu = document.querySelector(".store-menu")
 
 const addWhite = () => {
 
@@ -58,6 +61,14 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
    window.removeEventListener("scroll", addWhite)
       menu.classList.remove("menu-white")
 }
+
+// Configuração da loja do Menu
+toggleStore_1.addEventListener("click", () => {
+   storeMenu.classList.toggle("store-on")
+})
+toggleStore_2.addEventListener("click", () => {
+   storeMenu.classList.toggle("store-on")
+})
 
 
 // Configuração do Menu Mobile

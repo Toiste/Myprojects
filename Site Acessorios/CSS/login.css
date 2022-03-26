@@ -8,7 +8,7 @@ body{
     flex-direction: column;
 
     height: 100vh;
-    width: auto;
+    width: 100vw;
 }
 
 .login-logo {
@@ -17,7 +17,6 @@ body{
     align-items: center;
 
     height: 10rem;
-    width: 70rem;
 
     margin-bottom: 5rem;
 }
