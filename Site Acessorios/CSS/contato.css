@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .contato-home {
-    background-image: url("../IMG/soft.png");
+    background-image: url("../IMG/fundo-contato-1.jpg");
     background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
     background-size: cover;
     background-position: center center;
@@ -10,6 +10,38 @@
 
 .menu-background {
     background: none;
+}
+
+.contato-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--secundary-color);
+}
+
+.contato-home h2 {
+    font-weight: 400;
+    font-size: 7rem;
+}
+
+.contato-home div {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+
+    width: 15rem;
+}
+
+.contato-home a {
+    font-size: 1.5rem;
+    color: var(--secundary-color);
+}
+
+.contato-home p {
+    color: var(--secundary-color);
 }
 
 .contato-contact {

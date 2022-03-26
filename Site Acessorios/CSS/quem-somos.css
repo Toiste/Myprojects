@@ -45,6 +45,11 @@ p {
     background: linear-gradient(to left,#2dc71f,#2DCC1E,#2dc71f);
 }
 
+.contato-home div {
+
+    width: 20rem;
+}
+
 @media (max-width: 1024px) {
     .depoimentos-history {
         align-items: center;
